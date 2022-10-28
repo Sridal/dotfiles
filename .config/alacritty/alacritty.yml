@@ -1,0 +1,47 @@
+## Import files (Colors, Fonts, Etc)
+import:
+  - /home/shridal/.config/alacritty/colors.yml
+  - /home/shridal/.config/alacritty/fonts.yml
+
+## Set environment variables
+env:
+  TERM: alacritty
+  WINIT_X11_SCALE_FACTOR: '1.0'
+
+## Terminal window settings
+window:
+  dimensions:
+    columns: 84
+    lines: 24
+
+  padding:
+    x: 10
+    y: 10
+
+  decorations: None
+  startup_mode: windowed
+  dynamic_title: true
+
+## scrolling
+  history: 10000
+  multiplier: 3
+
+## Background opacity
+  opacity: .50
+
+## Cursor
+cursor:
+  style:
+    shape: block
+    blinking: On
+
+  unfocused_hollow: false
+
+## Live config reload
+live_config_reload: true
+
+## Shell
+#shell:
+#  program: /bin/zsh
+#  args:
+#    - --login
